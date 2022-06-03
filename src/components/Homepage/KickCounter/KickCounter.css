@@ -1,0 +1,35 @@
+
+.kickcounter{
+    color: white;
+    font-family: 'ui-rounded';
+}
+
+.kickcounter-options-container{
+    margin: 0 2rem;
+    position: relative;
+    display: flex;
+    gap: 100px;
+    min-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.kickcounter-option{
+    padding: 0 1rem;
+    background: #565656;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    border-color: transparent;
+    font-weight: 800;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.kickcounter-option:hover{
+    box-shadow: 1px 1px 1px 2px #565656,
+    1px -1px 1px 2px #565656,
+    -1px 1px 1px 2px #565656,
+    -1px -1px 1px 2px #565656;
+    cursor: pointer;
+}

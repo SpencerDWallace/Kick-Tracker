@@ -1,0 +1,121 @@
+.user-form{
+    padding: 4vmax 5vmax;
+    background: #FFFFFF55;
+    border-radius: 5px;
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-form-header{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(216, 26, 112) 0%, rgb(20, 127, 233)100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.form-control-internal{
+    display: grid;
+    align-items: center;
+    justify-items: start;
+    gap: 0 1rem;
+    margin: 0.75rem;
+    min-width: 60%;
+}
+
+.form-control-internal label{
+    display: block;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px rgba(23, 24, 23, 0.5);
+}
+
+.form-control-internal input{
+    min-width: 100%;
+    margin: auto 0;
+    border: 2px solid transparent;
+    padding: calc(3px + 0.375rem) calc(0.75rem - 1px);
+    border-radius: 5px;
+    background: var(#E3E3E3);
+    border-color: transparent;
+    outline:none;
+}
+
+.submit-success{
+    font-size: 1.1rem;    
+    font-weight:900;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    color:rgb(220, 255, 252);
+}
+
+.submit-fail{
+    font-size: 1.1rem;
+    font-weight:900;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    color:#ffffff;
+}
+
+.submit{
+    background: white;
+    color: rgb(17, 17, 17);
+    margin: 4% 0;
+    min-width: 10%;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px 5px 5px 5px;
+    padding: 0.4rem;
+    border-style: none;
+    box-shadow: 5px 5px 20px 4px #22222211;
+}
+
+.submit:hover{
+    cursor: pointer;
+    box-shadow: 2px 5px 10px 4px #24232333;
+}
+
+.alt-route{
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.alt-route a{
+    color: white;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(23, 24, 23, 0.5);
+    text-decoration: none;
+}
+
+.alt-route a:hover{
+    text-shadow: 2px 2px 5px rgba(23, 24, 23, 0.7);
+}
+
+@media only screen and (max-width: 400px) {
+    .user-form{
+        padding: 2vmax 0;
+        min-width: 90%;
+    }
+
+    .submit{
+        width: 40%;
+    }
+    .form-control-internal{
+        min-width: 85%;
+    }
+
+    .form-control-internal input{
+        min-width: inherit;
+    }
+}

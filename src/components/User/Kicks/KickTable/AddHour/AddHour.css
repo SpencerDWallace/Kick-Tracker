@@ -1,0 +1,24 @@
+
+.add-hour-select-container{
+    min-width: inherit;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.add-hour-select-container > *{
+    flex: 1;
+}
+
+.add-hour{
+    min-width: 80%;
+    width: 350px;
+    padding: 5% 1px;
+    background: #ffffffaa;
+    border-radius: 7px;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

@@ -1,0 +1,78 @@
+.kicktable{
+    min-width: 80%;
+    width: 350px;
+    padding: 5% 1px 0;
+    background: #ffffffaa;
+    margin: 2rem 0;
+    border-radius: 7px;
+}
+
+.kicktable-date{
+    
+}
+
+.kicktable table{
+    min-width: 100%;
+    margin: 0 auto;
+    border: 1px solid rgba(15, 15, 15, .5);
+    border-radius: 5px;
+    background: #f9f9f9cc;
+}
+
+.kicktable tr{
+    width: 100%;
+    padding: 2rem;
+    margin: 0;
+    vertical-align: baseline;
+}
+
+.kicktable th{
+    padding: 1.4em 0;
+    padding-right: 2em;
+    text-align: left;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 0.05em;
+    text-align: center;
+    border-bottom: 1px solid rgba(15, 15, 15, .18);
+}
+
+.kicktable td{
+    padding: 1em 0;
+    padding-right: 2em;
+    text-align: left;
+    margin-left: 0.5rem;
+    font-weight: 800;
+    text-transform: capitalize;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+
+.kicktable th:first-child, .kicktable td:first-child{
+    border-right: 1px solid rgba(15, 15, 15, .18);
+}
+
+.kicktable-edit-options{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.kicktable-edit-option{
+    background: white;
+    color: rgb(17, 17, 17);
+    margin: 4% 0;
+    width: 40%;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px 5px 5px 5px;
+    padding: 0.4rem;
+    border-style: none;
+    box-shadow: 5px 5px 20px 4px #22222211;
+}
+
+.kicktable-edit-option:hover{
+    cursor: pointer;
+    box-shadow: 2px 5px 10px 4px #24232333;
+}
