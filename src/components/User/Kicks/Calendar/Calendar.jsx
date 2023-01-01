@@ -70,9 +70,9 @@ function CalendarInternal({setLoading, getHours, setDateString}) {
       }
     }
 
-    const day = newDate[2];
+    const day = Number(newDate[2]).toString();
     const year = newDate[3];
-    
+    console.log(day)
     if(month === -1)
       return;
 

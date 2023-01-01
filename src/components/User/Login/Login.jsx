@@ -19,7 +19,7 @@ const login = async (email, password) =>{
   document.querySelector('.loader').classList.remove('removed')
   
   try {
-    const { data } = await axios.post(`https://kicktracker-backend.herokuapp.com/api/v1/auth/login`, {
+    const { data } = await axios.post(APIURL + `api/v1/auth/login`, {
       email,
       password,
     })

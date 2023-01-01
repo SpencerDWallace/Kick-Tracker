@@ -29,7 +29,7 @@ const resetPassword = async (email, password) =>{
     document.querySelector('.submit').classList.add('removed')
     document.querySelector('.loader').classList.remove('removed')
     try {
- const { data } = await axios.patch(`https://kicktracker-backend.herokuapp.com/api/v1/auth/reset/${id}`, {
+ const { data } = await axios.patch(APIURL + `api/v1/auth/reset/${id}`, {
         email,
         password,
       })

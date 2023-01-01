@@ -18,7 +18,7 @@ const register = async (email, password) =>{
     document.querySelector('.submit').classList.add('removed')
     document.querySelector('.loader').classList.remove('removed')
     try {
-        const { data } = await axios.post(`https://kicktracker-backend.herokuapp.com/api/v1/auth/register`, {
+        const { data } = await axios.post(APIURL + `api/v1/auth/register`, {
         email,
         password
         })

@@ -1,10 +1,12 @@
 import axios from 'axios'
 
- const signInStatus = async ()=>{
+const APIURL = 'https://kicktracker-backend.herokuapp.com/'; 
+
+const signInStatus = async ()=>{
     let token = localStorage.getItem('token');
     if(token){
       try {
-        const {data} = await axios.get(`https://kicktracker-backend.herokuapp.com/api/v1/`, {
+        const {data} = await axios.get(APIURL + `api/v1/`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -27,7 +29,7 @@ const userInfo = async ()=>{
   let token = localStorage.getItem('token');
   if(token){
     try {
-      let {data} = await axios.get(`https://kicktracker-backend.herokuapp.com/api/v1/`, {
+      let {data} = await axios.get(APIURL + `api/v1/`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -56,4 +58,6 @@ const signUserOut = async ()=>{
     window.location = "/";
   }
 
-export{signInStatus, userInfo, signUserOut};
+ 
+
+export{signInStatus, userInfo, signUserOut, APIURL};

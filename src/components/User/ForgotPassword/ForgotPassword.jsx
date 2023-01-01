@@ -20,7 +20,7 @@ const forgot = async (email) =>{
     document.querySelector('.loader').classList.remove('removed')
 
         try {
-          const { data } = await axios.post(`https://kicktracker-backend.herokuapp.com/api/v1/auth/forgot`, {
+          const { data } = await axios.post(APIURL + `api/v1/auth/forgot`, {
             email,
             url,
           })

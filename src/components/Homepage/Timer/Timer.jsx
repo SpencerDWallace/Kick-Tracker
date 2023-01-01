@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
+import { APIURL } from '../../utilities/user-utilities';
 import './Timer.css';
 
 function Timer({setCurrentKick}){
@@ -29,7 +30,7 @@ function Timer({setCurrentKick}){
 
             console.log("Year is: " + year + " Month is: " + month + " Day is: " + day);
             try{
-                const { data } = await axios.get('https://kicktracker-backend.herokuapp.com/api/v1/auth/kicks-hour',
+                const { data } = await axios.get(APIURL + 'api/v1/auth/kicks-hour',
                     { 
                         params:{
                             year,

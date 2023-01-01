@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { APIURL } from '../../utilities/user-utilities';
 import './KickCounter.css';
 
 function KickCounter({currentKicks, setCurrentKick}){
@@ -11,7 +12,7 @@ function KickCounter({currentKicks, setCurrentKick}){
             const time = new Date();
 
             try{
-            const { data } = await axios.post('https://kicktracker-backend.herokuapp.com/api/v1/auth/changekicks',{
+            const { data } = await axios.post(APIURL + 'api/v1/auth/changekicks',{
                 year:time.getFullYear(),
                 month:time.getMonth(),
                 day:time.getDate(),
