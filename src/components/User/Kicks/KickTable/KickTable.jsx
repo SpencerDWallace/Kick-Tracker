@@ -26,7 +26,7 @@ function KickTable({loading, setLoading}){
             }
             console.log("Year is: " + year + " Month is: " + month + " Day is: " + day);
             try{
-                const { data } = await axios.get('https://kicktracker-backend.herokuapp.com/api/v1/auth/kicks-day',
+                const { data } = await axios.get(APIURL + 'api/v1/auth/kicks-day',
                     { 
                         params:{
                             year,
@@ -68,7 +68,7 @@ function KickTable({loading, setLoading}){
             const day = Number(dateString[1]);
             console.log("Year is: " + year + " Month is: " + month + " Day is: " + day);
             try{
-                const { data } = await axios.patch('https://kicktracker-backend.herokuapp.com/api/v1/auth/update-day',
+                const { data } = await axios.patch(APIURL + 'api/v1/auth/update-day',
                     { 
                         year,
                         month,

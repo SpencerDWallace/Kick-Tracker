@@ -22,7 +22,7 @@ function CalendarInternal({setLoading, getHours, setDateString}) {
             month = time.getMonth();
         }
         try{
-            const { data } = await axios.get('https://kicktracker-backend.herokuapp.com/api/v1/auth/valid-days',
+            const { data } = await axios.get(APIURL + 'api/v1/auth/valid-days',
                 { 
                     params:{
                         year,
